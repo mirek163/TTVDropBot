@@ -87,7 +87,7 @@ export async function sendWebhook(msg: string[], event: string, webhookurl: stri
                         "inline": true
                     },
                     {
-                        "name": "Current Drop",
+                        "name": "Aktuální Drop",
                         "value": currentDrop,
                         "inline": true
                     },

@@ -77,7 +77,7 @@ export async function sendWebhook(msg: string[], event: string, webhookurl: stri
             {
                 "author": {
                     "name": "🟣TwitchDrop bot🟣",
-                    "url": "https://github.com/mirek163/TTVDropBot",
+                    "url": "https://www.twitch.tv/drops/inventory",
                     "icon_url": "https://i.imgur.com/T5dBq1K.png"
                 },
                 "fields": [

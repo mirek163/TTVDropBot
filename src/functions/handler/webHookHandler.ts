@@ -72,13 +72,13 @@ export async function sendWebhook(msg: string[], event: string, webhookurl: stri
 
     let embed = {
         username: "TwitchDrop bot",
-        avatar_url: "https://i.imgur.com/q1LaiEa.png",
+        avatar_url: "https://i.imgur.com/T5dBq1K.png",
         embeds: [
             {
                 "author": {
                     "name": "🟣TwitchDrop bot🟣",
                     "url": "https://github.com/mirek163/TTVDropBot",
-                    "icon_url": "https://i.imgur.com/q1LaiEa.png"
+                    "icon_url": "https://i.imgur.com/T5dBq1K.png"
                 },
                 "fields": [
                     {

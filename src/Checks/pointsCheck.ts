@@ -27,18 +27,18 @@ async function checkisClaimeable(request:any, channelId: string) {
         if (userdata.settings.debug) winston.info('No points to be claimed...')
     }
 
-    if (ClaimId !== '') {
-        //Claim
-        const opts = {
-            input: {
-                channelID: channelId,
-                claimID: ClaimId
-            }
-        }
-        const claimrequest = await TwitchGQL._SendQuery("ClaimCommunityPoints", opts, '46aaeebe02c99afdf4fc97c7c0cba964124bf6b0af229395f1f6d1feed05b3d0', 'OAuth ' + userdata.auth_token, true)
-        points = claimrequest[0].data.claimCommunityPoints.currentPoints
-        winston.info(chalk.gray('Claimed Channel Points...'), {event: "claim"})
-    }
+//    if (ClaimId !== '') {
+//        //Claim
+//        const opts = {
+//            input: {
+//                channelID: channelId,
+//                claimID: ClaimId
+//            }
+//        }
+//        const claimrequest = await TwitchGQL._SendQuery("ClaimCommunityPoints", opts, '46aaeebe02c99afdf4fc97c7c0cba964124bf6b0af229395f1f6d1feed05b3d0', 'OAuth ' + userdata.auth_token, true)
+//        points = claimrequest[0].data.claimCommunityPoints.currentPoints
+//        winston.info(chalk.gray('Claimed Channel Points...'), {event: "claim"})
+//    }
 }
 
 
